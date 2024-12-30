@@ -1,0 +1,110 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* UTSEENDE */
+.step-content {
+  width: 100%;
+  max-width: 400px;  /* Minskat max-width för formuläret */
+  margin: 20px auto; 
+  padding: 20px; 
+  background-color: #fff; 
+  border: 2px solid #ccc; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: block; /* Se till att fälten är staplade vertikalt */
+}
+
+.step-content input[type="date"],
+.step-content input[type="text"],
+.step-content input[type="email"],
+.step-content input[type="tel"] {
+  width: 100%; 
+  padding: 16px; 
+  font-size: 18px; 
+  border: 2px solid #ccc; 
+  border-radius: 8px; 
+  background-color: #f9f9f9;
+  transition: all 0.3s ease; 
+  margin-bottom: 16px; /* Lägg till mellanrum mellan varje fält */
+}
+
+/* mobil vänlig */
+@media (max-width: 600px) {
+  .step-content input[type="date"],
+  .step-content input[type="text"],
+  .step-content input[type="email"],
+  .step-content input[type="tel"] {
+    font-size: 20px; 
+    padding: 18px; 
+  }
+}
+
+/* fokus för input */
+.step-content input[type="date"]:focus,
+.step-content input[type="text"]:focus,
+.step-content input[type="email"]:focus,
+.step-content input[type="tel"]:focus {
+  border-color: #007BFF; /* Fokusfärg för input-fälten blir blå */
+  outline: none; 
+}
+
+/* knapp utseende */
+.step-content button {
+  width: 100%; 
+  padding: 16px; 
+  font-size: 18px; 
+  font-weight: 600; 
+  background-color: #007BFF; /* Blå bakgrund på knappen */
+  border: none; 
+  border-radius: 8px; 
+  color: white; 
+  cursor: pointer; 
+  margin-top: 10px; 
+  transition: all 0.3s ease; 
+}
+
+/* hover effekt för knappen */
+.step-content button:hover {
+  background-color: #0056b3; /* Mörkare blå vid hover */
+}
+
